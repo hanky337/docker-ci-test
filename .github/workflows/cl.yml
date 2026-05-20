@@ -21,7 +21,7 @@ jobs:
       image-ref: '${{ secrets.DOCKERHUB_USERNAME }}/my-app:${{ github.sha }}'
       format: 'table'
       exit-code: '1'
-      severity: 'CRITICAL' # 오타 수정 완료
+      serverity: 'CRITICAL' # 오타 수정 완료
        
   - name: Docker Hub 로그인
     uses: docker/login-action@v2
